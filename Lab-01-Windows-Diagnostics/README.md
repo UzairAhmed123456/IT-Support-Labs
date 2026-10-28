@@ -113,3 +113,22 @@ The underlying cause of the BitLocker event remains undetermined. No configurati
 ## Lab Outcome
 
 Completed a read-only investigation of Windows 11 system performance and a recurring BitLocker error. Documented observations, verified the current encryption state, and identified safe follow-up actions without making unnecessary system changes.
+## Screenshots and Supporting Evidence
+
+### CPU Performance
+![CPU performance](CPU%20performance.png)
+
+### Memory Performance
+![Memory performance](Memory%20performance.png)
+
+### Disk Performance
+![Disk performance](Disk%20performance.png)
+
+### BitLocker Error — October 28
+![BitLocker error](Bitlocker%20error%20code.png)
+
+### BitLocker Error — October 25
+![Previous BitLocker error](Previous%20Bitlocker%20error%20code.png)
+
+### PowerShell BitLocker Status
+![PowerShell BitLocker status](Powershell%20Bitlocker%20status.png)
