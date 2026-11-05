@@ -26,6 +26,12 @@ Used Event Viewer to identify recurring BitLocker-Driver Event ID 24641 errors a
 
 [View Lab 01 Report](Lab-01-Windows-Diagnostics/README.md)
 
+### [Lab 02 — Windows Defender & Firewall Verification](Lab-02-Windows-Security/README.md)
+
+Inspected Windows 11 endpoint security settings, enabled potentially unwanted app protection, and verified Microsoft Defender Antivirus and Windows Firewall using PowerShell. Documented security findings, troubleshooting steps, and an unresolved dashboard warning with seven screenshots.
+
+**Skills:** Windows Security, Microsoft Defender, Windows Firewall, PowerShell, endpoint security troubleshooting, technical documentation.
+
 ## Future Projects
 
 Additional Windows administration, networking, and IT support troubleshooting labs will be added as they are completed.
