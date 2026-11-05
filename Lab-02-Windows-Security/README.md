@@ -112,3 +112,26 @@ Completed a read-only security verification using Windows Security and PowerShel
 Verified that Microsoft Defender Antivirus and all three Windows Firewall profiles were enabled.
 
 The remaining App & browser control dashboard warning requires further investigation. No evidence was found during these checks that the verified antivirus or firewall protections were disabled.
+
+## Screenshots
+
+### Windows Security Dashboard
+![Windows Security dashboard](01-security-dashboard.png)
+
+### App & Browser Control
+![App and browser control warning](02-app-browser-control.png)
+
+### Reputation-Based Protection
+![Reputation-based protection settings](03-reputation-settings.png)
+
+### Microsoft Defender Antivirus
+![Microsoft Defender settings](04-defender-settings.png)
+
+### Windows Firewall Profiles
+![Windows Firewall profiles](05-firewall-profiles.png)
+
+### PowerShell Firewall Verification
+![PowerShell firewall output](06-powershell-firewall.png)
+
+### PowerShell Defender Verification
+![PowerShell Defender output](07-powershell-defender.png)
