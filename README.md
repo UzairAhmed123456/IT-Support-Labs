@@ -32,6 +32,15 @@ Inspected Windows 11 endpoint security settings, enabled potentially unwanted ap
 
 **Skills:** Windows Security, Microsoft Defender, Windows Firewall, PowerShell, endpoint security troubleshooting, technical documentation.
 
+### [Lab 03 — Windows User Accounts and File Permissions](Lab-03-NTFS-Permissions/README.md)
+
+Created a standard Windows user account, configured NTFS file permissions, and tested access restrictions using different user accounts.
+
+Troubleshot access-denied errors, adjusted permissions, and verified that the standard user could successfully edit and save a shared document.
+
+**Skills:** Windows 11 administration, local user accounts, NTFS permissions, access control, troubleshooting, technical documentation.
+
+[View Lab 03 Report](Lab-03-NTFS-Permissions/README.md)
 ## Future Projects
 
 Additional Windows administration, networking, and IT support troubleshooting labs will be added as they are completed.
