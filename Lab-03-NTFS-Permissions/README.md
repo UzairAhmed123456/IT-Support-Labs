@@ -44,6 +44,10 @@ Get-LocalGroupMember -Group "Administrators"
 
 Confirmed that the test account was enabled and was not a member of the Administrators group.
 
+![Standard Windows User Created](01-Standard-User-Created.png)
+
+![User Privileges Verified](02-User-Privilege-Verification.png)
+
 ### 2. Investigated NTFS Permissions
 
 Created a test folder and document under Public Documents.
@@ -52,6 +56,10 @@ Examined the Security and Advanced Security Settings windows to understand the e
 
 Identified inherited permissions and reviewed entries for SYSTEM, Administrators, INTERACTIVE, and other Windows security principals.
 
+![Initial NTFS Permissions](03-Initial%20NTFS-Permissions.png)
+
+![Initial Advanced Permissions](04-Intial-Advanced-Permissions.png)
+
 ### 3. Configured a Restricted Test Folder
 
 Created a separate `Restricted-Documents` folder containing `Confidential-Test.txt`.
@@ -59,6 +67,10 @@ Created a separate `Restricted-Documents` folder containing `Confidential-Test.t
 Disabled permission inheritance on this test folder, converting inherited permissions into explicit permissions.
 
 Adjusted the INTERACTIVE permission entry to remove general Write and Modify access while retaining read-related permissions.
+
+![Initial NTFS Permissions](03-Initial%20NTFS-Permissions.png)
+
+![Initial Advanced Permissions](04-Intial-Advanced-Permissions.png)
 
 ### 4. Inspected Permissions Using the Command Line
 
@@ -78,6 +90,8 @@ Reviewed the access control list, including permission codes such as:
 
 This provided a command-line view of the folder's configured permissions.
 
+![NTFS Permissions Command Output](07-NFTS-Permission-Command-Line.png)
+
 ### 5. Reproduced the Problem
 
 Signed in as `ITLabUser` and opened the test document.
@@ -85,6 +99,8 @@ Signed in as `ITLabUser` and opened the test document.
 The account could initially read the document, but attempting to save changes resulted in a Notepad permission error.
 
 This reproduced a realistic file access issue.
+
+![Notepad Access Error](08-Access-Denied-Error.png)
 
 ### 6. Applied a Targeted Permission Fix
 
@@ -94,6 +110,8 @@ Added an explicit **Allow — Modify** permission entry for `ITLabUser`, applyin
 
 This provided the test account with the required access without granting administrator privileges.
 
+![ITLabUser Modify Permission Added](09-NTFS-Permissions-Fixed.png)
+
 ### 7. Verified the Resolution
 
 Signed back into `ITLabUser`.
@@ -101,6 +119,8 @@ Signed back into `ITLabUser`.
 Successfully edited and saved `Confidential-Test.txt`, then reopened the file to confirm the changes persisted.
 
 **Result: The file access issue was resolved.**
+
+![Successful Permission Fix Verification](10-Permissions-Fix-Verified.png)
 
 ## Key Lessons Learned
 
